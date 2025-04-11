@@ -97,16 +97,16 @@
               "y": 0,
               "z": 8.25
             },
-            "scale": {
-              "x": 1,
-              "y": 1,
-              "z": 1
-            },
             "rotation": {
               "x": 0,
               "y": 0,
               "z": 0,
               "w": 1
+            },
+            "scale": {
+              "x": 1,
+              "y": 1,
+              "z": 1
             },
             "parent": 0
           }
@@ -153,12 +153,12 @@
             "parent": 513
           }
         },
-        "515": {
+        "516": {
           "json": {
             "position": {
-              "x": 13.5,
-              "y": 0,
-              "z": 2
+              "x": 11.5,
+              "y": 3,
+              "z": 2.75
             },
             "rotation": {
               "x": 0,
@@ -167,19 +167,40 @@
               "w": 1
             },
             "scale": {
-              "x": 1,
-              "y": 1,
-              "z": 1
+              "x": 5,
+              "y": 5,
+              "z": 5
             },
             "parent": 0
           }
         },
-        "516": {
+        "517": {
           "json": {
             "position": {
-              "x": 2.75,
+              "x": 4,
+              "y": 3,
+              "z": 12.75
+            },
+            "rotation": {
+              "x": 0,
               "y": 0,
-              "z": 13.5
+              "z": 0,
+              "w": 1
+            },
+            "scale": {
+              "x": 5.004899978637695,
+              "y": 4.980000019073486,
+              "z": 4.984880447387695
+            },
+            "parent": 0
+          }
+        },
+        "518": {
+          "json": {
+            "position": {
+              "x": 3.5,
+              "y": 0,
+              "z": 10
             },
             "rotation": {
               "x": 0,
@@ -220,16 +241,22 @@
             "entityId": 8002
           }
         },
-        "515": {
+        "516": {
           "json": {
             "networkId": 0,
             "entityId": 8003
           }
         },
-        "516": {
+        "517": {
           "json": {
             "networkId": 0,
             "entityId": 8004
+          }
+        },
+        "518": {
+          "json": {
+            "networkId": 0,
+            "entityId": 8005
           }
         }
       }
@@ -249,6 +276,26 @@
           }
         },
         "512": {
+          "json": {
+            "states": []
+          }
+        },
+        "513": {
+          "json": {
+            "states": []
+          }
+        },
+        "514": {
+          "json": {
+            "states": []
+          }
+        },
+        "516": {
+          "json": {
+            "states": []
+          }
+        },
+        "517": {
           "json": {
             "states": []
           }
@@ -277,6 +324,13 @@
             "visibleMeshesCollisionMask": 1,
             "invisibleMeshesCollisionMask": 2
           }
+        },
+        "518": {
+          "json": {
+            "src": "assets/asset-packs/wooden_door/door_fantasy.glb",
+            "visibleMeshesCollisionMask": 1,
+            "invisibleMeshesCollisionMask": 2
+          }
         }
       }
     },
@@ -298,7 +352,7 @@
                   "tex": {
                     "$case": "videoTexture",
                     "videoTexture": {
-                      "videoPlayerEntity": 0
+                      "videoPlayerEntity": 515
                     }
                   }
                 },
@@ -318,7 +372,80 @@
                   "tex": {
                     "$case": "videoTexture",
                     "videoTexture": {
-                      "videoPlayerEntity": 0
+                      "videoPlayerEntity": 516,
+                      "wrapMode": 0,
+                      "filterMode": 0
+                    }
+                  }
+                },
+                "alphaTest": 0.5,
+                "castShadows": true,
+                "alphaTexture": {
+                  "tex": {
+                    "$case": "texture",
+                    "texture": {
+                      "src": "",
+                      "wrapMode": 0,
+                      "filterMode": 0
+                    }
+                  }
+                },
+                "emissiveTexture": {
+                  "tex": {
+                    "$case": "texture",
+                    "texture": {
+                      "src": "",
+                      "wrapMode": 0,
+                      "filterMode": 0
+                    }
+                  }
+                },
+                "bumpTexture": {
+                  "tex": {
+                    "$case": "texture",
+                    "texture": {
+                      "src": "",
+                      "wrapMode": 0,
+                      "filterMode": 0
+                    }
+                  }
+                },
+                "albedoColor": {
+                  "r": 1,
+                  "g": 1,
+                  "b": 1,
+                  "a": 1
+                },
+                "emissiveColor": {
+                  "r": 1,
+                  "g": 1,
+                  "b": 1
+                },
+                "reflectivityColor": {
+                  "r": 1,
+                  "g": 1,
+                  "b": 1
+                },
+                "transparencyMode": 4,
+                "metallic": 0,
+                "roughness": 1,
+                "specularIntensity": 0,
+                "emissiveIntensity": 0,
+                "directIntensity": 1
+              }
+            }
+          }
+        },
+        "517": {
+          "json": {
+            "material": {
+              "$case": "pbr",
+              "pbr": {
+                "texture": {
+                  "tex": {
+                    "$case": "videoTexture",
+                    "videoTexture": {
+                      "videoPlayerEntity": 517
                     }
                   }
                 },
@@ -340,7 +467,7 @@
         "protocolBuffer": "PBMeshCollider"
       },
       "data": {
-        "515": {
+        "516": {
           "json": {
             "collisionMask": 1,
             "mesh": {
@@ -349,7 +476,7 @@
             }
           }
         },
-        "516": {
+        "517": {
           "json": {
             "collisionMask": 1,
             "mesh": {
@@ -369,7 +496,7 @@
         "protocolBuffer": "PBMeshRenderer"
       },
       "data": {
-        "515": {
+        "516": {
           "json": {
             "mesh": {
               "$case": "plane",
@@ -379,7 +506,7 @@
             }
           }
         },
-        "516": {
+        "517": {
           "json": {
             "mesh": {
               "$case": "plane",
@@ -419,14 +546,19 @@
             "value": "Tile 1"
           }
         },
-        "515": {
+        "516": {
           "json": {
             "value": "Video Player"
           }
         },
-        "516": {
+        "517": {
           "json": {
             "value": "Video Player_2"
+          }
+        },
+        "518": {
+          "json": {
+            "value": "Wooden Door"
           }
         }
       }
@@ -440,7 +572,7 @@
         "protocolBuffer": "PBPointerEvents"
       },
       "data": {
-        "515": {
+        "516": {
           "json": {
             "pointerEvents": [
               {
@@ -455,7 +587,7 @@
             ]
           }
         },
-        "516": {
+        "517": {
           "json": {
             "pointerEvents": [
               {
@@ -463,6 +595,21 @@
                 "eventInfo": {
                   "button": 1,
                   "hoverText": "Play Video",
+                  "maxDistance": 10,
+                  "showFeedback": true
+                }
+              }
+            ]
+          }
+        },
+        "518": {
+          "json": {
+            "pointerEvents": [
+              {
+                "eventType": 1,
+                "eventInfo": {
+                  "button": 1,
+                  "hoverText": "Open / Close",
                   "maxDistance": 10,
                   "showFeedback": true
                 }
@@ -496,17 +643,27 @@
             ]
           }
         },
-        "515": {
+        "516": {
           "json": {
             "componentIds": [
               1043
             ]
           }
         },
-        "516": {
+        "517": {
           "json": {
             "componentIds": [
-              1043
+              1043,
+              1042
+            ]
+          }
+        },
+        "518": {
+          "json": {
+            "componentIds": [
+              1042,
+              1020,
+              2709697014
             ]
           }
         }
@@ -521,14 +678,14 @@
         "protocolBuffer": "PBVideoPlayer"
       },
       "data": {
-        "515": {
+        "516": {
           "json": {
-            "src": "https://player.vimeo.com/external/552481870.m3u8?s=c312c8533f97e808fccc92b0510b085c8122a875",
+            "src": "https://casla.boedo",
             "playing": true,
             "volume": 1
           }
         },
-        "516": {
+        "517": {
           "json": {
             "src": "https://player.vimeo.com/external/552481870.m3u8?s=c312c8533f97e808fccc92b0510b085c8122a875",
             "playing": true,
@@ -568,7 +725,7 @@
       "data": {
         "512": {
           "json": {
-            "gizmo": 0
+            "gizmo": 3
           }
         }
       }
@@ -863,22 +1020,19 @@
               "art"
             ],
             "author": "Boedo",
-            "email": "",
             "tags": [],
             "layout": {
+              "base": {
+                "x": 0,
+                "y": 0
+              },
               "parcels": [
                 {
                   "x": 0,
                   "y": 0
                 }
-              ],
-              "base": {
-                "x": 0,
-                "y": 0
-              }
+              ]
             },
-            "silenceVoiceChat": false,
-            "disablePortableExperiences": false,
             "spawnPoints": []
           }
         }
@@ -932,8 +1086,9 @@
                 "children": [
                   512,
                   513,
-                  515,
-                  516
+                  516,
+                  517,
+                  518
                 ]
               },
               {
@@ -950,6 +1105,7 @@
               },
               {
                 "entity": 513,
+                "open": true,
                 "children": [
                   514
                 ]
@@ -959,11 +1115,15 @@
                 "children": []
               },
               {
-                "entity": 515,
+                "entity": 516,
                 "children": []
               },
               {
-                "entity": 516,
+                "entity": 517,
+                "children": []
+              },
+              {
+                "entity": 518,
                 "children": []
               }
             ]
@@ -1241,9 +1401,9 @@
         "serializationType": "map"
       },
       "data": {
-        "515": {
+        "516": {
           "json": {
-            "id": 1,
+            "id": 5,
             "value": [
               {
                 "name": "Play",
@@ -1276,9 +1436,9 @@
             ]
           }
         },
-        "516": {
+        "517": {
           "json": {
-            "id": 3,
+            "id": 7,
             "value": [
               {
                 "name": "Play",
@@ -1307,6 +1467,46 @@
                 "type": "set_state",
                 "jsonPayload": "{ \"state\": \"Toggle\" }",
                 "allowedInBasicView": true
+              }
+            ]
+          }
+        },
+        "518": {
+          "json": {
+            "id": 9,
+            "value": [
+              {
+                "name": "Open",
+                "type": "set_state",
+                "jsonPayload": "{ \"state\": \"Open\" }",
+                "allowedInBasicView": true
+              },
+              {
+                "name": "Close",
+                "type": "set_state",
+                "jsonPayload": "{ \"state\": \"Closed\" }",
+                "allowedInBasicView": true
+              },
+              {
+                "name": "Open or Close",
+                "type": "set_state",
+                "jsonPayload": "{ \"state\": \"Toggle\" }",
+                "allowedInBasicView": true
+              },
+              {
+                "name": "Play Sound",
+                "type": "play_sound",
+                "jsonPayload": "{\"src\":\"assets/asset-packs/wooden_door/sound.mp3\"}"
+              },
+              {
+                "name": "Play Open Animation",
+                "type": "play_animation",
+                "jsonPayload": "{ \"animation\": \"Open\" }"
+              },
+              {
+                "name": "Play Close Animation",
+                "type": "play_animation",
+                "jsonPayload": "{ \"animation\": \"Close\" }"
               }
             ]
           }
@@ -1333,7 +1533,7 @@
         "0": {
           "json": {
             "id": 0,
-            "value": 4
+            "value": 10
           }
         }
       }
@@ -1508,101 +1708,6 @@
         "serializationType": "map"
       },
       "data": {
-        "515": {
-          "json": {
-            "value": [
-              {
-                "type": "on_input_action",
-                "conditions": [],
-                "actions": [
-                  {
-                    "id": 1,
-                    "name": "Plays or Stop"
-                  }
-                ],
-                "basicViewId": "trigger-when-clicked"
-              },
-              {
-                "type": "on_state_change",
-                "conditions": [
-                  {
-                    "id": 2,
-                    "type": "when_state_is",
-                    "value": "Playing"
-                  }
-                ],
-                "actions": [
-                  {
-                    "id": 1,
-                    "name": "Play Video Stream"
-                  }
-                ],
-                "basicViewId": "trigger-when-turned-on"
-              },
-              {
-                "type": "on_state_change",
-                "conditions": [
-                  {
-                    "id": 2,
-                    "type": "when_state_is",
-                    "value": "Stopped"
-                  }
-                ],
-                "actions": [
-                  {
-                    "id": 1,
-                    "name": "Stop Video Stream"
-                  }
-                ],
-                "basicViewId": "trigger-when-turned-off"
-              },
-              {
-                "type": "on_state_change",
-                "conditions": [
-                  {
-                    "id": 2,
-                    "type": "when_state_is",
-                    "value": "Toggle"
-                  },
-                  {
-                    "id": 2,
-                    "type": "when_previous_state_is",
-                    "value": "Playing"
-                  }
-                ],
-                "operation": "and",
-                "actions": [
-                  {
-                    "id": 1,
-                    "name": "Stop"
-                  }
-                ]
-              },
-              {
-                "type": "on_state_change",
-                "conditions": [
-                  {
-                    "id": 2,
-                    "type": "when_state_is",
-                    "value": "Toggle"
-                  },
-                  {
-                    "id": 2,
-                    "type": "when_previous_state_is",
-                    "value": "Stopped"
-                  }
-                ],
-                "operation": "and",
-                "actions": [
-                  {
-                    "id": 1,
-                    "name": "Play"
-                  }
-                ]
-              }
-            ]
-          }
-        },
         "516": {
           "json": {
             "value": [
@@ -1611,7 +1716,7 @@
                 "conditions": [],
                 "actions": [
                   {
-                    "id": 3,
+                    "id": 5,
                     "name": "Plays or Stop"
                   }
                 ],
@@ -1621,14 +1726,14 @@
                 "type": "on_state_change",
                 "conditions": [
                   {
-                    "id": 4,
+                    "id": 6,
                     "type": "when_state_is",
                     "value": "Playing"
                   }
                 ],
                 "actions": [
                   {
-                    "id": 3,
+                    "id": 5,
                     "name": "Play Video Stream"
                   }
                 ],
@@ -1638,14 +1743,14 @@
                 "type": "on_state_change",
                 "conditions": [
                   {
-                    "id": 4,
+                    "id": 6,
                     "type": "when_state_is",
                     "value": "Stopped"
                   }
                 ],
                 "actions": [
                   {
-                    "id": 3,
+                    "id": 5,
                     "name": "Stop Video Stream"
                   }
                 ],
@@ -1655,12 +1760,12 @@
                 "type": "on_state_change",
                 "conditions": [
                   {
-                    "id": 4,
+                    "id": 6,
                     "type": "when_state_is",
                     "value": "Toggle"
                   },
                   {
-                    "id": 4,
+                    "id": 6,
                     "type": "when_previous_state_is",
                     "value": "Playing"
                   }
@@ -1668,7 +1773,7 @@
                 "operation": "and",
                 "actions": [
                   {
-                    "id": 3,
+                    "id": 5,
                     "name": "Stop"
                   }
                 ]
@@ -1677,12 +1782,12 @@
                 "type": "on_state_change",
                 "conditions": [
                   {
-                    "id": 4,
+                    "id": 6,
                     "type": "when_state_is",
                     "value": "Toggle"
                   },
                   {
-                    "id": 4,
+                    "id": 6,
                     "type": "when_previous_state_is",
                     "value": "Stopped"
                   }
@@ -1690,8 +1795,206 @@
                 "operation": "and",
                 "actions": [
                   {
-                    "id": 3,
+                    "id": 5,
                     "name": "Play"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "517": {
+          "json": {
+            "value": [
+              {
+                "type": "on_input_action",
+                "conditions": [],
+                "actions": [
+                  {
+                    "id": 7,
+                    "name": "Stop"
+                  }
+                ],
+                "basicViewId": "trigger-when-clicked"
+              },
+              {
+                "type": "on_state_change",
+                "conditions": [
+                  {
+                    "id": 8,
+                    "type": "when_state_is",
+                    "value": "Playing"
+                  }
+                ],
+                "actions": [
+                  {
+                    "id": 7,
+                    "name": "Play Video Stream"
+                  }
+                ],
+                "basicViewId": "trigger-when-turned-on"
+              },
+              {
+                "type": "on_state_change",
+                "conditions": [
+                  {
+                    "id": 8,
+                    "type": "when_state_is",
+                    "value": "Stopped"
+                  }
+                ],
+                "actions": [
+                  {
+                    "id": 7,
+                    "name": "Stop Video Stream"
+                  }
+                ],
+                "basicViewId": "trigger-when-turned-off"
+              },
+              {
+                "type": "on_state_change",
+                "conditions": [
+                  {
+                    "id": 8,
+                    "type": "when_state_is",
+                    "value": "Toggle"
+                  },
+                  {
+                    "id": 8,
+                    "type": "when_previous_state_is",
+                    "value": "Playing"
+                  }
+                ],
+                "operation": "and",
+                "actions": [
+                  {
+                    "id": 7,
+                    "name": "Stop"
+                  }
+                ]
+              },
+              {
+                "type": "on_state_change",
+                "conditions": [
+                  {
+                    "id": 8,
+                    "type": "when_state_is",
+                    "value": "Toggle"
+                  },
+                  {
+                    "id": 8,
+                    "type": "when_previous_state_is",
+                    "value": "Stopped"
+                  }
+                ],
+                "operation": "and",
+                "actions": [
+                  {
+                    "id": 7,
+                    "name": "Play"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "518": {
+          "json": {
+            "value": [
+              {
+                "type": "on_input_action",
+                "conditions": [],
+                "actions": [
+                  {
+                    "id": 9,
+                    "name": "Open or Close"
+                  }
+                ],
+                "basicViewId": "trigger-when-clicked"
+              },
+              {
+                "type": "on_state_change",
+                "conditions": [
+                  {
+                    "id": 10,
+                    "type": "when_state_is",
+                    "value": "Open"
+                  }
+                ],
+                "actions": [
+                  {
+                    "id": 9,
+                    "name": "Play Open Animation"
+                  },
+                  {
+                    "id": 9,
+                    "name": "Play Sound"
+                  }
+                ],
+                "basicViewId": "trigger-when-opened"
+              },
+              {
+                "type": "on_state_change",
+                "conditions": [
+                  {
+                    "id": 10,
+                    "type": "when_state_is",
+                    "value": "Closed"
+                  }
+                ],
+                "actions": [
+                  {
+                    "id": 9,
+                    "name": "Play Close Animation"
+                  },
+                  {
+                    "id": 9,
+                    "name": "Play Sound"
+                  }
+                ],
+                "basicViewId": "trigger-when-closed"
+              },
+              {
+                "type": "on_state_change",
+                "conditions": [
+                  {
+                    "id": 10,
+                    "type": "when_state_is",
+                    "value": "Toggle"
+                  },
+                  {
+                    "id": 10,
+                    "type": "when_previous_state_is",
+                    "value": "Open"
+                  }
+                ],
+                "operation": "and",
+                "actions": [
+                  {
+                    "id": 9,
+                    "name": "Close"
+                  }
+                ]
+              },
+              {
+                "type": "on_state_change",
+                "conditions": [
+                  {
+                    "id": 10,
+                    "type": "when_state_is",
+                    "value": "Toggle"
+                  },
+                  {
+                    "id": 10,
+                    "type": "when_previous_state_is",
+                    "value": "Closed"
+                  }
+                ],
+                "operation": "and",
+                "actions": [
+                  {
+                    "id": 9,
+                    "name": "Open"
                   }
                 ]
               }
@@ -1745,9 +2048,9 @@
         "serializationType": "map"
       },
       "data": {
-        "515": {
+        "516": {
           "json": {
-            "id": 2,
+            "id": 6,
             "value": [
               "Playing",
               "Stopped",
@@ -1756,15 +2059,26 @@
             "defaultValue": "Stopped"
           }
         },
-        "516": {
+        "517": {
           "json": {
-            "id": 4,
+            "id": 8,
             "value": [
               "Playing",
               "Stopped",
               "Toggle"
             ],
             "defaultValue": "Stopped"
+          }
+        },
+        "518": {
+          "json": {
+            "id": 10,
+            "value": [
+              "Open",
+              "Closed",
+              "Toggle"
+            ],
+            "defaultValue": "Closed"
           }
         }
       }
@@ -2008,24 +2322,40 @@
             },
             "videoControl": {
               "isEnabled": true,
-              "disableVideoPlayersSound": true,
+              "disableVideoPlayersSound": false,
               "showAuthorOnVideoPlayers": true,
               "linkAllVideoPlayers": false,
               "videoPlayers": [
                 {
-                  "entity": 515,
-                  "customName": "Video 1"
+                  "entity": 516,
+                  "customName": "Boedo 12"
                 },
                 {
-                  "entity": 516,
-                  "customName": "Video 2"
+                  "entity": 517,
+                  "customName": "Casla 2"
                 }
               ]
             },
             "smartItemsControl": {
               "isEnabled": true,
               "linkAllSmartItems": false,
-              "smartItems": []
+              "smartItems": [
+                {
+                  "entity": 517,
+                  "customName": "Video",
+                  "defaultAction": "Plays or Stop"
+                },
+                {
+                  "entity": 518,
+                  "customName": "Door",
+                  "defaultAction": "Open or Close"
+                },
+                {
+                  "entity": 518,
+                  "customName": "Doooooooooooooooooor",
+                  "defaultAction": ""
+                }
+              ]
             },
             "rewardsControl": {
               "isEnabled": true,
@@ -2055,10 +2385,23 @@
         "512": {
           "json": {}
         },
-        "515": {
+        "513": {
+          "json": {}
+        },
+        "514": {
           "json": {}
         },
         "516": {
+          "json": {
+            "porportionalScaling": true
+          }
+        },
+        "517": {
+          "json": {
+            "porportionalScaling": true
+          }
+        },
+        "518": {
           "json": {}
         }
       }
@@ -2253,7 +2596,39 @@
             "assetId": "0c419cb9-bc21-4c51-977f-41a505a097f0"
           }
         },
-        "515": {
+        "516": {
+          "json": {
+            "isBasicViewEnabled": false,
+            "componentName": "Video Player",
+            "fields": [
+              {
+                "name": "Hover Text",
+                "type": "core::PointerEvents"
+              },
+              {
+                "name": "Video Player",
+                "type": "core::VideoPlayer"
+              },
+              {
+                "name": "When Clicked",
+                "type": "asset-packs::Triggers",
+                "basicViewId": "trigger-when-clicked"
+              },
+              {
+                "name": "When Turned On",
+                "type": "asset-packs::Triggers",
+                "basicViewId": "trigger-when-turned-on"
+              },
+              {
+                "name": "When Turned Off",
+                "type": "asset-packs::Triggers",
+                "basicViewId": "trigger-when-turned-off"
+              }
+            ],
+            "assetId": "dc5ec17b-aa1a-4bd0-bace-7d615d9bdc70"
+          }
+        },
+        "517": {
           "json": {
             "isBasicViewEnabled": true,
             "componentName": "Video Player",
@@ -2285,18 +2660,14 @@
             "assetId": "dc5ec17b-aa1a-4bd0-bace-7d615d9bdc70"
           }
         },
-        "516": {
+        "518": {
           "json": {
             "isBasicViewEnabled": true,
-            "componentName": "Video Player",
+            "componentName": "Door",
             "fields": [
               {
                 "name": "Hover Text",
                 "type": "core::PointerEvents"
-              },
-              {
-                "name": "Video Player",
-                "type": "core::VideoPlayer"
               },
               {
                 "name": "When Clicked",
@@ -2304,17 +2675,17 @@
                 "basicViewId": "trigger-when-clicked"
               },
               {
-                "name": "When Turned On",
+                "name": "When Opened",
                 "type": "asset-packs::Triggers",
-                "basicViewId": "trigger-when-turned-on"
+                "basicViewId": "trigger-when-opened"
               },
               {
-                "name": "When Turned Off",
+                "name": "When Closed",
                 "type": "asset-packs::Triggers",
-                "basicViewId": "trigger-when-turned-off"
+                "basicViewId": "trigger-when-closed"
               }
             ],
-            "assetId": "dc5ec17b-aa1a-4bd0-bace-7d615d9bdc70"
+            "assetId": "ed36149f-76c5-45c4-a678-d4b31c4ed9ca"
           }
         }
       }

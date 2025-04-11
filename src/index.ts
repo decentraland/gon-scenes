@@ -8,6 +8,8 @@ import { setupUi } from './ui'
 export const Click = engine.defineComponent('click', { count: Schemas.Number })
 export let clickEntity: Entity
 
+(globalThis as any).DEBUG_NETWORK_MESSAGES = true
+
 export async function main() {
   const userCube = createCube(Math.random() * 8, 1, Math.random() * 8)
   syncEntity(userCube, [Click.componentId, Material.componentId])
@@ -34,6 +36,8 @@ export async function main() {
 
   pointerEventsSystem.onPointerDown({ entity: clickEntity, opts: { hoverText: 'add counter', button: InputAction.IA_PRIMARY }}, () => {
     Click.getMutable(clickEntity).count += 1
+    const userCube = createCube(Math.random() * 8, 1, Math.random() * 8)
+    syncEntity(userCube, [Material.componentId])
   })
 
   // Click.onChange(clickEntity, (val) => {
