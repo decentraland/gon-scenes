@@ -14,9 +14,9 @@
   ],
   "scene": {
     "parcels": [
-      "27,20"
+      "23,-24"
     ],
-    "base": "27,20"
+    "base": "23,-24"
   },
   "spawnPoints": [],
   "requiredPermissions": [
@@ -31,5 +31,13 @@
   "source": {
     "origin": "creator-hub",
     "projectId": "afe32cd7-da76-4908-837c-6f188d43778f"
+  },
+  "contact": {
+    "name": "",
+    "email": ""
+  },
+  "multiplayer": true,
+  "worldConfiguration": {
+    "name": "boedo.dcl.eth"
   }
 }

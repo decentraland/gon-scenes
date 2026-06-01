@@ -1,33 +1,16 @@
-import { engine, Entity, InputAction, Material, pointerEventsSystem, RealmInfo, Schemas } from '@dcl/sdk/ecs'
+import { engine, Entity, InputAction, Material, pointerEventsSystem, RealmInfo, Schemas, SyncedClock } from '@dcl/sdk/ecs'
 import { createCube } from './factory'
-import { changeColorSystem } from './systems'
-
 import { syncEntity } from '@dcl/sdk/network'
 import { setupUi } from './ui'
 
-export const Click = engine.defineComponent('click', { count: Schemas.Number })
-export let clickEntity: Entity
-
-(globalThis as any).DEBUG_NETWORK_MESSAGES = true
 
 export async function main() {
-  const userCube = createCube(Math.random() * 8, 1, Math.random() * 8)
-  syncEntity(userCube, [Click.componentId, Material.componentId])
-  changeColorSystem()
-  // setupUi()
-  if (false) {
-    // console.log('__DEV__', __DEV__)
-    //Enable local PLAY button
-     engine.addSystem(() => {
-         const realmInfo = RealmInfo.getOrNull(engine.RootEntity)
-         console.log('room: ', realmInfo?.room)
-         if (!realmInfo) return
-         if (!realmInfo.isConnectedSceneRoom) {
-
-            //  realmInfo.isConnectedSceneRoom = true
-         }
-     })
-  }
+  setupUi()
+  engine.addSystem(() => {
+    for (const [entity, value] of engine.getEntitiesWith(SyncedClock)) {
+      console.log(`Entity=${entity}. SyncedClock: ${value.syncedTimestamp}. Status: ${value.status}`)
+    }
+  })
 
 
   clickEntity = createCube(4, 1, 2)
@@ -40,9 +23,8 @@ export async function main() {
     syncEntity(userCube, [Material.componentId])
   })
 
-  // Click.onChange(clickEntity, (val) => {
-  //   console.log('Click changed', JSON.stringify(val))
-  // })
-
-  // setupUi()
 }
+
+export const Click = engine.defineComponent('click', { count: Schemas.Number })
+export let clickEntity: Entity
+
